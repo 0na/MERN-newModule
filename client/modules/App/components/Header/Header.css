@@ -60,9 +60,11 @@
   border-bottom: 1px solid #fff;
 }
 
-.main div {
+.navigation a {
   float: left;
   padding: 20px;
+  text-decoration: none;
+  color: #fff;
 }
 
 @media (max-width: 767px) {

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 import { FormattedMessage } from 'react-intl';
-
+//import { NavLink } from 'react-router-dom';
 // Import Style
 import styles from './Header.css';
 
@@ -14,10 +14,10 @@ export function Header(props, context) {
   return (
     <div className={ styles.header }>
       <div className={ styles['language-switcher'] }>
-        <div className={ styles.main }>
-          <div>Home</div>
-          <div>About</div>
-          <div>Posts</div>
+        <div className={ styles.navigation }>
+          <Link to="/home"> Home </Link>
+          <Link to="/about"> About </Link>
+          <Link to="/posts"> Posts </Link>
         </div>
         <ul>
           <li><FormattedMessage id="switchLanguage" /></li>
